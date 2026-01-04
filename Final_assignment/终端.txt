@@ -1,0 +1,147 @@
+1. 加载并预处理数据...
+✅ 原始数据加载完成：30000行 × 13列
+原始字段列表：['Job Title', 'Industry', 'Job Status', 'AI Impact Level', 'Median Salary (USD)', 'Required Education', 'Experience Required (Years)', 'Job Openings (2024)', 'Projected Openings (2030)', 'Remote Work Ratio (%)', 'Automation Risk (%)', 'Location', 'Gender Diversity (%)']
+
+✅ 数据标准化完成，核心字段：['job_role', 'industry', 'country', 'automation_risk', 'openings_2024', 'openings_2030', 'salary_usd', 'education', 'gender_diversity', 'remote_ratio', 'ai_impact_level', 'experience_years', 'job_status']
+✅ 异常值处理完成，剩余数据：30000行
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+就业变化预测模型性能: RMSE = 6.0548
+特征重要性:
+                 feature  importance
+0   automation_risk_norm    0.284084
+1        salary_usd_norm    0.276903
+3      remote_ratio_norm    0.251067
+2  experience_years_norm    0.070494
+5       industry_encoded    0.042953
+6        country_encoded    0.037639
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+就业变化预测模型性能: RMSE = 6.0548
+特征重要性:
+                 feature  importance
+0   automation_risk_norm    0.284084
+1        salary_usd_norm    0.276903
+3      remote_ratio_norm    0.251067
+2  experience_years_norm    0.070494
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+就业变化预测模型性能: RMSE = 6.0548
+特征重要性:
+                 feature  importance
+0   automation_risk_norm    0.284084
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+就业变化预测模型性能: RMSE = 6.0548
+特征重要性:
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+
+2. 训练预测模型...
+
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+
+2. 训练预测模型...
+2. 训练预测模型...
+📦 就业变化预测模型已保存：./Final_assignment/output/models/employment_change_model.pkl
+就业变化预测模型性能: RMSE = 6.0548
+特征重要性:
+                 feature  importance
+0   automation_risk_norm    0.284084
+1        salary_usd_norm    0.276903
+3      remote_ratio_norm    0.251067
+2  experience_years_norm    0.070494
+5       industry_encoded    0.042953
+6        country_encoded    0.037639
+7      education_encoded    0.030466
+4   ai_impact_level_norm    0.006393
+D:\python\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\python\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+D:\python\.venv\Lib\site-packages\sklearn\metrics\_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+📦 自动化风险预测模型已保存：./Final_assignment/output/models/automation_risk_model.pkl
+
+自动化风险预测模型性能: ROC-AUC = 0.5085
+分类报告:
+              precision    recall  f1-score   support
+
+           0       0.70      1.00      0.82      4191
+           1       0.00      0.00      0.00      1809
+
+    accuracy                           0.70      6000
+   macro avg       0.35      0.50      0.41      6000
+weighted avg       0.49      0.70      0.57      6000
+
+
+3. 进行未来就业市场预测...
+
+4. 生成分析报告...
+📄 行业AI影响分析已保存：./Final_assignment/output/ai_impact_by_industry.csv
+📄 国家AI影响分析已保存：./Final_assignment/output/ai_impact_by_country.csv
+📄 高风险工作报告已保存：./Final_assignment/output/high_risk_jobs_report.csv
+
+5. 生成可视化结果...
+📈 自动化风险分布图已保存：./Final_assignment/output/visualizations/automation_risk_by_industry.png
+📈 就业变化率图已保存：./Final_assignment/output/visualizations/employment_change_top10.png
+📈 高风险岗位图已保存：./Final_assignment/output/visualizations/high_risk_jobs_top10.png
+📈 未来就业预测图已保存：./Final_assignment/output/visualizations/future_employment_forecast.png
+📈 地区AI影响热力图已保存：./Final_assignment/output/visualizations/ai_impact_by_region.png
+📈 风险与薪资关系图已保存：./Final_assignment/output/visualizations/risk_vs_salary.png
+📈 predicted_employment_change_by_industry图已保存：./Final_assignment/output/visualizations/predicted_employment_change_by_industry.png
+
+📊 2030年就业变化预测(industry)：
+industry
+IT                1.453652
+Education         1.451380
+Entertainment     1.398767
+Healthcare        1.385715
+Finance           1.374010
+Transportation    1.325809
+Manufacturing     1.315690
+Retail            1.305567
+Name: predicted_employment_change, dtype: float64
+📈 predicted_employment_change_by_country图已保存：./Final_assignment/output/visualizations/predicted_employment_change_by_country.png
+
+📊 2030年就业变化预测(country)：
+country
+Australia    1.456798
+USA          1.400406
+Brazil       1.394315
+China        1.363234
+India        1.360769
+Canada       1.355319
+Germany      1.351334
+UK           1.327184
+Name: predicted_employment_change, dtype: float64
+📈 predicted_employment_change_by_education图已保存：./Final_assignment/output/visualizations/predicted_employment_change_by_education.png
+
+📊 2030年就业变化预测(education)：
+education
+PhD                  1.458077
+Associate Degree     1.380739
+High School          1.356078
+Master’s Degree      1.346000
+Bachelor’s Degree    1.343173
+Name: predicted_employment_change, dtype: float64
+📈 predicted_employment_change_by_ai_impact_level图已保存：./Final_assignment/output/visualizations/predicted_employment_change_by_ai_impact_level.png
+
+📊 2030年就业变化预测(ai_impact_level)：
+ai_impact_level
+Moderate    1.389409
+Low         1.377008
+High        1.362211
+Name: predicted_employment_change, dtype: float64
+
+✅ 所有分析完成！结果已保存至输出目录。
